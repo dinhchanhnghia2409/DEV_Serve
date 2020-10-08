@@ -55,8 +55,7 @@ router.post('/signup', (req, res) => {
         return res.status(403).json("Sai tài khoản");
       }
       if ( bcrypt.compare(password, result.password)) {
-        // here we implement the JWT token functionality
-        const token = jwt.sign({ username: username }, process.env.key, {expiresIn:'30d'});
+        const token = jwt.sign({_id:result._id }, process.env.key, {expiresIn:'30d'});
   
         res.json({
           token: token,
