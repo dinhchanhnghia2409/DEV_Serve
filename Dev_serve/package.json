@@ -2,10 +2,11 @@
   "name": "dev_serve",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "serve.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon serve.js"
+    "start": "node serve.js",
+    "dev":"nodemon serve.js"
   },
   "author": "",
   "license": "ISC",

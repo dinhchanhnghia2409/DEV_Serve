@@ -5,4 +5,4 @@ const address = "mongodb+srv://dinhchanhnghia:Nghiadaica123.@cluster0.rfqvp.mong
 
 mongoose.connect(address, {
     useCreateIndex: true,
-}).then(() => console.log('Database connected ' + address));
+}).then(() => console.log('Kết nối thành công tại ' + address));
