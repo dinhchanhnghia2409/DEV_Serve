@@ -21,6 +21,4 @@ router.get('/user/:id', checkToken, (req, res) => {
       })
 })
 
-
-
 module.exports = router;

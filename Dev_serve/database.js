@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-const address = process.env.DB;
+const address = "mongodb+srv://dinhchanhnghia:Nghiadaica123.@cluster0.rfqvp.mongodb.net/<WhatFood>?retryWrites=true&w=majority";
 
 mongoose.connect(address, {
     useCreateIndex: true,
